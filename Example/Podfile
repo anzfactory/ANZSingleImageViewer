@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ANZSingleImageViewer_Example' do
+  pod 'ANZSingleImageViewer', :path => '../'
+
+  target 'ANZSingleImageViewer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
