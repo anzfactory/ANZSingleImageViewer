@@ -1,5 +1,5 @@
 PODS:
-  - ANZSingleImageViewer (0.1.41)
+  - ANZSingleImageViewer (0.3.0)
 
 DEPENDENCIES:
   - ANZSingleImageViewer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ANZSingleImageViewer: f715567a329a4adf7b275be0b63769f390349d4e
+  ANZSingleImageViewer: 43e3c3617ab87f6639ee233208ba62ec39b9fc9b
 
 PODFILE CHECKSUM: 12a4b690baa5e91e5337e583511d3f3ac0fa38be
 

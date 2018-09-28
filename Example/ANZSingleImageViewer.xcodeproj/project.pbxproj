@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B40AB0C215DBE320033031B /* SimpleCustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40AB0B215DBE320033031B /* SimpleCustomTransitionViewController.swift */; };
-		2B40AB0E215DBF580033031B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40AB0D215DBF580033031B /* TableViewController.swift */; };
-		2B40AB10215DC8E30033031B /* TableCustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40AB0F215DC8E30033031B /* TableCustomTransitionViewController.swift */; };
-		2B6E3638215D0F2700C9A43B /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E3637215D0F2700C9A43B /* SimpleViewController.swift */; };
+		2BEAA193215E4DDF0077B276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEAA192215E4DDF0077B276 /* ViewController.swift */; };
+		2BEAA195215E550E0077B276 /* ZoomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEAA194215E550E0077B276 /* ZoomTransitionViewController.swift */; };
 		429F2C3ACCB7070D7296BA76 /* Pods_ANZSingleImageViewer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D06BA0321CA161E623C8FEB /* Pods_ANZSingleImageViewer_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -34,15 +31,12 @@
 /* Begin PBXFileReference section */
 		10EC7AC616C8BD4FCDA06A1B /* Pods-ANZSingleImageViewer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANZSingleImageViewer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANZSingleImageViewer_Example/Pods-ANZSingleImageViewer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		24C18A3B421FB60AC9126814 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2B40AB0B215DBE320033031B /* SimpleCustomTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCustomTransitionViewController.swift; sourceTree = "<group>"; };
-		2B40AB0D215DBF580033031B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		2B40AB0F215DC8E30033031B /* TableCustomTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCustomTransitionViewController.swift; sourceTree = "<group>"; };
-		2B6E3637215D0F2700C9A43B /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		2BEAA192215E4DDF0077B276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BEAA194215E550E0077B276 /* ZoomTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionViewController.swift; sourceTree = "<group>"; };
 		4B89369395A8D47D6FB9F110 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ANZSingleImageViewer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANZSingleImageViewer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -102,11 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				2B6E3637215D0F2700C9A43B /* SimpleViewController.swift */,
-				2B40AB0B215DBE320033031B /* SimpleCustomTransitionViewController.swift */,
-				2B40AB0D215DBF580033031B /* TableViewController.swift */,
-				2B40AB0F215DC8E30033031B /* TableCustomTransitionViewController.swift */,
+				2BEAA192215E4DDF0077B276 /* ViewController.swift */,
+				2BEAA194215E550E0077B276 /* ZoomTransitionViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -334,12 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B40AB0C215DBE320033031B /* SimpleCustomTransitionViewController.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				2BEAA195215E550E0077B276 /* ZoomTransitionViewController.swift in Sources */,
+				2BEAA193215E4DDF0077B276 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				2B40AB10215DC8E30033031B /* TableCustomTransitionViewController.swift in Sources */,
-				2B40AB0E215DBF580033031B /* TableViewController.swift in Sources */,
-				2B6E3638215D0F2700C9A43B /* SimpleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
