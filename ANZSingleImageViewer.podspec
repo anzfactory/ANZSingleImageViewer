@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANZSingleImageViewer'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Simple image viewer'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ ANZSingleImageViewer is simple image viewer.
   s.social_media_url = 'https://twitter.com/AnzNetJp'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.2'
 
   s.source_files = 'ANZSingleImageViewer/Classes/**/*'
   
