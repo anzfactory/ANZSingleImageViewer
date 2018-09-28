@@ -12,13 +12,33 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func didTapButton1(_ sender: Any) {
+        
+        let root = SimpleViewController()
+        let navVC = UINavigationController(rootViewController: root)
+        present(navVC, animated: true, completion: nil)
     }
-
+    
+    @IBAction func didTapButton2(_ sender: Any) {
+        
+        let root = SimpleCustomTransitionViewController()
+        let navVC = UINavigationController(rootViewController: root)
+        present(navVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func didTapButton3(_ sender: Any) {
+        
+        let root = TableViewController()
+        let navVC = UINavigationController(rootViewController: root)
+        present(navVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func didTapButton4(_ sender: Any) {
+        
+        let root = TableCustomTransitionViewController()
+        let navVC = UINavigationController(rootViewController: root)
+        present(navVC, animated: true, completion: nil)
+    }
 }
-

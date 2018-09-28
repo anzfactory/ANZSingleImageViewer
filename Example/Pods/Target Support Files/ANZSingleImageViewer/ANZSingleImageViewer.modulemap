@@ -1,0 +1,6 @@
+framework module ANZSingleImageViewer {
+  umbrella header "ANZSingleImageViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}

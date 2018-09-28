@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,55 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lci-TZ-ePn">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIJ-qb-JgF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                        <state key="normal" title="ViewController"/>
+                                        <connections>
+                                            <action selector="didTapButton1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2tk-m8-lMC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmn-J4-HV5">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="93.5"/>
+                                        <state key="normal" title="ViewController + CustomTransition"/>
+                                        <connections>
+                                            <action selector="didTapButton2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WgS-Cj-cUl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kka-d7-qS0">
+                                        <rect key="frame" x="0.0" y="187.5" width="375" height="94"/>
+                                        <state key="normal" title="TableView"/>
+                                        <connections>
+                                            <action selector="didTapButton3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jrz-7c-INy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiR-oR-fRj">
+                                        <rect key="frame" x="0.0" y="281.5" width="375" height="93.5"/>
+                                        <state key="normal" title="TableView + CustomTransition"/>
+                                        <connections>
+                                            <action selector="didTapButton4:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nnd-DH-gg9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lci-TZ-ePn" secondAttribute="height" multiplier="1:1" id="npd-nr-BHH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lci-TZ-ePn" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="3Im-sz-rvL"/>
+                            <constraint firstAttribute="trailing" secondItem="lci-TZ-ePn" secondAttribute="trailing" id="GiK-ci-Qoa"/>
+                            <constraint firstItem="lci-TZ-ePn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Yru-Zq-oIq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

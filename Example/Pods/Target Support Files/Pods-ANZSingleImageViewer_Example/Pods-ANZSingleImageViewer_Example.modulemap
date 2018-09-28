@@ -1,0 +1,6 @@
+framework module Pods_ANZSingleImageViewer_Example {
+  umbrella header "Pods-ANZSingleImageViewer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

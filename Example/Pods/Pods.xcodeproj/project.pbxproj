@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14B4B4D935F8A9134A00ACE8FE85184B /* ANZSingleImageViewer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 973DFA511CFEB0C8BB7D67203260E4D6 /* ANZSingleImageViewer.bundle */; };
+		1CC514CC43BCB0DE75004CAFD5A5B6B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1F26E9187A0F27C1C5B6D763C40252D1 /* bg_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B1CF0DF8904A674C843F5208A141D3 /* bg_close@3x.png */; };
+		34B3ED84D1175C64B2D0E17638655721 /* Pods-ANZSingleImageViewer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4408CFFA545F984E381A8E8ED721C918 /* Pods-ANZSingleImageViewer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3520F48D6C3CA42D633E95B24511471A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		6CB5F20ABA7F2452CBF5D5987292292F /* ANZSingleImageViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 201303DDAB6F908CEEC1B29C48E66574 /* ANZSingleImageViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D96060C40CAA023AFC6AF1AABB9D9F /* ANZSingleImageViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 355F76494C92019742C7F057E1E68C8C /* ANZSingleImageViewer-dummy.m */; };
+		7E141D5BED4A5A794C2BB21A44DAF3A8 /* icon_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A58235554643842A923F77EADF289ADC /* icon_close@2x.png */; };
+		94128146968A253B4BB4081218FA3696 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		98AE8C549D963144CAE07CEA57861B04 /* Pods-ANZSingleImageViewer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF75DE553E4C8677D5FD17F6D061301A /* Pods-ANZSingleImageViewer_Tests-dummy.m */; };
+		9EF9EB301F92A8707F1BA9E51A9C9A54 /* ANZSingleImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DFA17C3527E51D2CAB3C9E9A93E62 /* ANZSingleImageViewer.swift */; };
+		A467A6A41C1C11A30D0CFDA848EAE321 /* bg_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0640E11FE6287B09BA7B82119FCA4B2 /* bg_close@2x.png */; };
+		AAD12EF1D11AC0EF409E02FA177A9603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		AE435D508975812FFE4A2A4EA18CAC0A /* Pods-ANZSingleImageViewer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBF739235AE7B328D11A4E45DB575C6 /* Pods-ANZSingleImageViewer_Example-dummy.m */; };
+		C32BE4E3ACEEDA30A5C6C7635EB6AFDA /* icon_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0B01D575135E5147D4EB41E5B004E9 /* icon_close@3x.png */; };
+		C52D2EADC572A8B2B68184140C8952F3 /* ANZSingleImageViewerSourceTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF59FB026B7B04512F16D1DC125EAB1 /* ANZSingleImageViewerSourceTransitionDelegate.swift */; };
+		DB03CF14CDA3FF2B245C104FC29C6467 /* Pods-ANZSingleImageViewer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA33B395FCD70F30C602266BE8B7C2F2 /* Pods-ANZSingleImageViewer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E468BD715D65AB105FBE065BB9CFEE36 /* ANZSingleImageViewerDestinationTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B87844D6175A9A91408587070223D /* ANZSingleImageViewerDestinationTransitionDelegate.swift */; };
+		E8B4546C43D3BB1FD6D306B10431322C /* ANZSingleImageViewer+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33F6FD0DF7E42D704F68314601069C /* ANZSingleImageViewer+Transitioning.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1445BA257F4002563D02D6326EE7144F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAA5D07D6DBDC77F591F3DAFCD23425C;
+			remoteInfo = "Pods-ANZSingleImageViewer_Example";
+		};
+		6D3AFE497AF8D98B9E5105CAF29A7E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90757C5776807AAE8C47C2D530FA903E;
+			remoteInfo = "ANZSingleImageViewer-ANZSingleImageViewer";
+		};
+		E24DC14BE17E579B5FC00C5A56A39FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE29AEDC63D1E571B1D30C992C894941;
+			remoteInfo = ANZSingleImageViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DBF739235AE7B328D11A4E45DB575C6 /* Pods-ANZSingleImageViewer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ANZSingleImageViewer_Example-dummy.m"; sourceTree = "<group>"; };
+		1033EE1301AC2969626AD95A2D6D16CC /* Pods-ANZSingleImageViewer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZSingleImageViewer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1CBBB0373B9ACC9D24BA614A1AF0728B /* ANZSingleImageViewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANZSingleImageViewer-prefix.pch"; sourceTree = "<group>"; };
+		201303DDAB6F908CEEC1B29C48E66574 /* ANZSingleImageViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANZSingleImageViewer-umbrella.h"; sourceTree = "<group>"; };
+		2BE3627EC70369831B74C66EA1710D9A /* ResourceBundle-ANZSingleImageViewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ANZSingleImageViewer-Info.plist"; sourceTree = "<group>"; };
+		2DF59FB026B7B04512F16D1DC125EAB1 /* ANZSingleImageViewerSourceTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZSingleImageViewerSourceTransitionDelegate.swift; path = ANZSingleImageViewer/Classes/ANZSingleImageViewerSourceTransitionDelegate.swift; sourceTree = "<group>"; };
+		355F76494C92019742C7F057E1E68C8C /* ANZSingleImageViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANZSingleImageViewer-dummy.m"; sourceTree = "<group>"; };
+		35E2B52ADB2828DB772BCE4FC0331075 /* Pods-ANZSingleImageViewer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZSingleImageViewer_Tests-resources.sh"; sourceTree = "<group>"; };
+		3CC6CFAAA8561E0E93E93FAF5A933A79 /* Pods-ANZSingleImageViewer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ANZSingleImageViewer_Tests.modulemap"; sourceTree = "<group>"; };
+		3DDC90FA5751EC5C484FEA6B20F5F068 /* Pods-ANZSingleImageViewer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANZSingleImageViewer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4408CFFA545F984E381A8E8ED721C918 /* Pods-ANZSingleImageViewer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ANZSingleImageViewer_Example-umbrella.h"; sourceTree = "<group>"; };
+		4623C8CF9D6E61E458C7328DA08D6FBF /* Pods-ANZSingleImageViewer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZSingleImageViewer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		530E02769A90680F566F4D0C3BC1CB0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58ECEE0109B092D9D5FD95B61502E23D /* ANZSingleImageViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ANZSingleImageViewer.modulemap; sourceTree = "<group>"; };
+		5BECE9AABD3ABA433EE2962380368C44 /* Pods-ANZSingleImageViewer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZSingleImageViewer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF586F71841ACA9068FF0C02C15A99A /* ANZSingleImageViewer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ANZSingleImageViewer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5C4B28EF8CEB16E82A5E6384CF96B9CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5D6B397758967B186F1249A46FD7FBD1 /* Pods-ANZSingleImageViewer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZSingleImageViewer_Example-resources.sh"; sourceTree = "<group>"; };
+		61B1CF0DF8904A674C843F5208A141D3 /* bg_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg_close@3x.png"; path = "ANZSingleImageViewer/Assets/bg_close@3x.png"; sourceTree = "<group>"; };
+		675460C67FA65343FB8C28FA5929997D /* Pods-ANZSingleImageViewer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZSingleImageViewer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6DB59DD2EDAEED32C42C85FE4DA6950C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7E4DFA17C3527E51D2CAB3C9E9A93E62 /* ANZSingleImageViewer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZSingleImageViewer.swift; path = ANZSingleImageViewer/Classes/ANZSingleImageViewer.swift; sourceTree = "<group>"; };
+		88FD371213BA34C5ED167A304F16F578 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C867038196F01B0F476D3FB92615454 /* Pods-ANZSingleImageViewer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZSingleImageViewer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C80F046A0B00A662033FCE06971F62 /* Pods-ANZSingleImageViewer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANZSingleImageViewer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		973DFA511CFEB0C8BB7D67203260E4D6 /* ANZSingleImageViewer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ANZSingleImageViewer.bundle; path = "ANZSingleImageViewer-ANZSingleImageViewer.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E41557ED175B8A2EA9F691CA8B9E352 /* Pods-ANZSingleImageViewer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ANZSingleImageViewer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A58235554643842A923F77EADF289ADC /* icon_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_close@2x.png"; path = "ANZSingleImageViewer/Assets/icon_close@2x.png"; sourceTree = "<group>"; };
+		A79B87844D6175A9A91408587070223D /* ANZSingleImageViewerDestinationTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZSingleImageViewerDestinationTransitionDelegate.swift; path = ANZSingleImageViewer/Classes/ANZSingleImageViewerDestinationTransitionDelegate.swift; sourceTree = "<group>"; };
+		AE756E3841B22D4545E629BF4B4FCB54 /* ANZSingleImageViewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANZSingleImageViewer.xcconfig; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB3BFBF8060F4EBC1705C2E7E629D028 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF06A4B544F0C5268D6EF506DD9B458C /* Pods_ANZSingleImageViewer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ANZSingleImageViewer_Example.framework; path = "Pods-ANZSingleImageViewer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0B01D575135E5147D4EB41E5B004E9 /* icon_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_close@3x.png"; path = "ANZSingleImageViewer/Assets/icon_close@3x.png"; sourceTree = "<group>"; };
+		BF75DE553E4C8677D5FD17F6D061301A /* Pods-ANZSingleImageViewer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ANZSingleImageViewer_Tests-dummy.m"; sourceTree = "<group>"; };
+		C00618BA238372BBA0202E01F9767968 /* Pods-ANZSingleImageViewer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ANZSingleImageViewer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9959C55EEEA375DE7CD945E6999F1D2 /* Pods-ANZSingleImageViewer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ANZSingleImageViewer_Example.modulemap"; sourceTree = "<group>"; };
+		E0640E11FE6287B09BA7B82119FCA4B2 /* bg_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bg_close@2x.png"; path = "ANZSingleImageViewer/Assets/bg_close@2x.png"; sourceTree = "<group>"; };
+		E08EAD1F430DF48504324908F1FD1D0F /* Pods_ANZSingleImageViewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ANZSingleImageViewer_Tests.framework; path = "Pods-ANZSingleImageViewer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA33B395FCD70F30C602266BE8B7C2F2 /* Pods-ANZSingleImageViewer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ANZSingleImageViewer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EDC620519FD42967D17A5D5BCD7096D0 /* Pods-ANZSingleImageViewer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZSingleImageViewer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9182D1EF6E49199D63F48EA8E1A418C /* ANZSingleImageViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ANZSingleImageViewer.framework; path = ANZSingleImageViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA33F6FD0DF7E42D704F68314601069C /* ANZSingleImageViewer+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ANZSingleImageViewer+Transitioning.swift"; path = "ANZSingleImageViewer/Classes/ANZSingleImageViewer+Transitioning.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DB599B1BE91AB0A6AD9748BC757C140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC514CC43BCB0DE75004CAFD5A5B6B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24728952A489ECF8403E6B02ED32A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD12EF1D11AC0EF409E02FA177A9603 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC02AD3F535297954FAF8DFF5F468B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D345F9B630F7780EF99696BA20838597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94128146968A253B4BB4081218FA3696 /* Foundation.framework in Frameworks */,
+				3520F48D6C3CA42D633E95B24511471A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		323AA2E60901D2362666FB13A1F87D96 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B844EB8F79D35925759CCCD310E0A36D /* ANZSingleImageViewer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		77D381BC6AD3AA118FD5C4FA9237507F /* Pods-ANZSingleImageViewer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				530E02769A90680F566F4D0C3BC1CB0C /* Info.plist */,
+				3CC6CFAAA8561E0E93E93FAF5A933A79 /* Pods-ANZSingleImageViewer_Tests.modulemap */,
+				9E41557ED175B8A2EA9F691CA8B9E352 /* Pods-ANZSingleImageViewer_Tests-acknowledgements.markdown */,
+				94C80F046A0B00A662033FCE06971F62 /* Pods-ANZSingleImageViewer_Tests-acknowledgements.plist */,
+				BF75DE553E4C8677D5FD17F6D061301A /* Pods-ANZSingleImageViewer_Tests-dummy.m */,
+				675460C67FA65343FB8C28FA5929997D /* Pods-ANZSingleImageViewer_Tests-frameworks.sh */,
+				35E2B52ADB2828DB772BCE4FC0331075 /* Pods-ANZSingleImageViewer_Tests-resources.sh */,
+				EA33B395FCD70F30C602266BE8B7C2F2 /* Pods-ANZSingleImageViewer_Tests-umbrella.h */,
+				EDC620519FD42967D17A5D5BCD7096D0 /* Pods-ANZSingleImageViewer_Tests.debug.xcconfig */,
+				1033EE1301AC2969626AD95A2D6D16CC /* Pods-ANZSingleImageViewer_Tests.release.xcconfig */,
+			);
+			name = "Pods-ANZSingleImageViewer_Tests";
+			path = "Target Support Files/Pods-ANZSingleImageViewer_Tests";
+			sourceTree = "<group>";
+		};
+		7B86A497D0AA57A292A600A68BA2453D /* Pods-ANZSingleImageViewer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				BB3BFBF8060F4EBC1705C2E7E629D028 /* Info.plist */,
+				D9959C55EEEA375DE7CD945E6999F1D2 /* Pods-ANZSingleImageViewer_Example.modulemap */,
+				C00618BA238372BBA0202E01F9767968 /* Pods-ANZSingleImageViewer_Example-acknowledgements.markdown */,
+				3DDC90FA5751EC5C484FEA6B20F5F068 /* Pods-ANZSingleImageViewer_Example-acknowledgements.plist */,
+				0DBF739235AE7B328D11A4E45DB575C6 /* Pods-ANZSingleImageViewer_Example-dummy.m */,
+				4623C8CF9D6E61E458C7328DA08D6FBF /* Pods-ANZSingleImageViewer_Example-frameworks.sh */,
+				5D6B397758967B186F1249A46FD7FBD1 /* Pods-ANZSingleImageViewer_Example-resources.sh */,
+				4408CFFA545F984E381A8E8ED721C918 /* Pods-ANZSingleImageViewer_Example-umbrella.h */,
+				5BECE9AABD3ABA433EE2962380368C44 /* Pods-ANZSingleImageViewer_Example.debug.xcconfig */,
+				8C867038196F01B0F476D3FB92615454 /* Pods-ANZSingleImageViewer_Example.release.xcconfig */,
+			);
+			name = "Pods-ANZSingleImageViewer_Example";
+			path = "Target Support Files/Pods-ANZSingleImageViewer_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				323AA2E60901D2362666FB13A1F87D96 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				CA29D84F37331F44877FAF43FDDB8131 /* Products */,
+				D736E78F6023513C2A6F0389C46D0760 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B844EB8F79D35925759CCCD310E0A36D /* ANZSingleImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				7E4DFA17C3527E51D2CAB3C9E9A93E62 /* ANZSingleImageViewer.swift */,
+				FA33F6FD0DF7E42D704F68314601069C /* ANZSingleImageViewer+Transitioning.swift */,
+				A79B87844D6175A9A91408587070223D /* ANZSingleImageViewerDestinationTransitionDelegate.swift */,
+				2DF59FB026B7B04512F16D1DC125EAB1 /* ANZSingleImageViewerSourceTransitionDelegate.swift */,
+				BAA833B69BC313D9BAA4C44FAE02D651 /* Pod */,
+				D50FAAF9F46128B6339CD2C19E1BC8E4 /* Resources */,
+				F459DDE970F47442E3769B4B89731B1B /* Support Files */,
+			);
+			name = ANZSingleImageViewer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BAA833B69BC313D9BAA4C44FAE02D651 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5BF586F71841ACA9068FF0C02C15A99A /* ANZSingleImageViewer.podspec */,
+				5C4B28EF8CEB16E82A5E6384CF96B9CF /* LICENSE */,
+				6DB59DD2EDAEED32C42C85FE4DA6950C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CA29D84F37331F44877FAF43FDDB8131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				973DFA511CFEB0C8BB7D67203260E4D6 /* ANZSingleImageViewer.bundle */,
+				F9182D1EF6E49199D63F48EA8E1A418C /* ANZSingleImageViewer.framework */,
+				BF06A4B544F0C5268D6EF506DD9B458C /* Pods_ANZSingleImageViewer_Example.framework */,
+				E08EAD1F430DF48504324908F1FD1D0F /* Pods_ANZSingleImageViewer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D50FAAF9F46128B6339CD2C19E1BC8E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0640E11FE6287B09BA7B82119FCA4B2 /* bg_close@2x.png */,
+				61B1CF0DF8904A674C843F5208A141D3 /* bg_close@3x.png */,
+				A58235554643842A923F77EADF289ADC /* icon_close@2x.png */,
+				BF0B01D575135E5147D4EB41E5B004E9 /* icon_close@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D736E78F6023513C2A6F0389C46D0760 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B86A497D0AA57A292A600A68BA2453D /* Pods-ANZSingleImageViewer_Example */,
+				77D381BC6AD3AA118FD5C4FA9237507F /* Pods-ANZSingleImageViewer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F459DDE970F47442E3769B4B89731B1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58ECEE0109B092D9D5FD95B61502E23D /* ANZSingleImageViewer.modulemap */,
+				AE756E3841B22D4545E629BF4B4FCB54 /* ANZSingleImageViewer.xcconfig */,
+				355F76494C92019742C7F057E1E68C8C /* ANZSingleImageViewer-dummy.m */,
+				1CBBB0373B9ACC9D24BA614A1AF0728B /* ANZSingleImageViewer-prefix.pch */,
+				201303DDAB6F908CEEC1B29C48E66574 /* ANZSingleImageViewer-umbrella.h */,
+				88FD371213BA34C5ED167A304F16F578 /* Info.plist */,
+				2BE3627EC70369831B74C66EA1710D9A /* ResourceBundle-ANZSingleImageViewer-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ANZSingleImageViewer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		312AC00A47C56957AFA50E0F8B9B3078 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B3ED84D1175C64B2D0E17638655721 /* Pods-ANZSingleImageViewer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68FE9287379AC108435005234964A19E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB5F20ABA7F2452CBF5D5987292292F /* ANZSingleImageViewer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C25EF53E176015ABC705F04E7F4529E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB03CF14CDA3FF2B245C104FC29C6467 /* Pods-ANZSingleImageViewer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		90757C5776807AAE8C47C2D530FA903E /* ANZSingleImageViewer-ANZSingleImageViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABC146943B52AFF7FBC3194EEC0B03A3 /* Build configuration list for PBXNativeTarget "ANZSingleImageViewer-ANZSingleImageViewer" */;
+			buildPhases = (
+				70CAEBDE08F6D3B793AD3953B1C8E914 /* Sources */,
+				BC02AD3F535297954FAF8DFF5F468B85 /* Frameworks */,
+				FF432C8022BD58079668D3ADC4A458E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ANZSingleImageViewer-ANZSingleImageViewer";
+			productName = "ANZSingleImageViewer-ANZSingleImageViewer";
+			productReference = 973DFA511CFEB0C8BB7D67203260E4D6 /* ANZSingleImageViewer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DE29AEDC63D1E571B1D30C992C894941 /* ANZSingleImageViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A5BC3BAF39247407BEE59719CF39763 /* Build configuration list for PBXNativeTarget "ANZSingleImageViewer" */;
+			buildPhases = (
+				3EEF300A31BDA954D0A8446E1AEC5F6A /* Sources */,
+				D345F9B630F7780EF99696BA20838597 /* Frameworks */,
+				F2BDEA02DEFD142ACF9F3CE8870B171F /* Resources */,
+				68FE9287379AC108435005234964A19E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				680E66FC56C05273437D61D5533F8A47 /* PBXTargetDependency */,
+			);
+			name = ANZSingleImageViewer;
+			productName = ANZSingleImageViewer;
+			productReference = F9182D1EF6E49199D63F48EA8E1A418C /* ANZSingleImageViewer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAA5D07D6DBDC77F591F3DAFCD23425C /* Pods-ANZSingleImageViewer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB6791CAB407FACC9C88094CE8815D29 /* Build configuration list for PBXNativeTarget "Pods-ANZSingleImageViewer_Example" */;
+			buildPhases = (
+				0A6EF8E3A41D5DFC7CF92E215E2D46B2 /* Sources */,
+				B24728952A489ECF8403E6B02ED32A67 /* Frameworks */,
+				312AC00A47C56957AFA50E0F8B9B3078 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBD53537AF16DF4F7BB1829CA1C2006A /* PBXTargetDependency */,
+			);
+			name = "Pods-ANZSingleImageViewer_Example";
+			productName = "Pods-ANZSingleImageViewer_Example";
+			productReference = BF06A4B544F0C5268D6EF506DD9B458C /* Pods_ANZSingleImageViewer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF6491EB41FCCEE3E5592ED564A5789B /* Pods-ANZSingleImageViewer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C017ABDC17260E1D328BA3DDA91EDA65 /* Build configuration list for PBXNativeTarget "Pods-ANZSingleImageViewer_Tests" */;
+			buildPhases = (
+				646B3ABD15FDFCA35A4833EDC70E3E33 /* Sources */,
+				7DB599B1BE91AB0A6AD9748BC757C140 /* Frameworks */,
+				6C25EF53E176015ABC705F04E7F4529E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				811F37BD972BBF4C605811D3044FFBD9 /* PBXTargetDependency */,
+			);
+			name = "Pods-ANZSingleImageViewer_Tests";
+			productName = "Pods-ANZSingleImageViewer_Tests";
+			productReference = E08EAD1F430DF48504324908F1FD1D0F /* Pods_ANZSingleImageViewer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CA29D84F37331F44877FAF43FDDB8131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE29AEDC63D1E571B1D30C992C894941 /* ANZSingleImageViewer */,
+				90757C5776807AAE8C47C2D530FA903E /* ANZSingleImageViewer-ANZSingleImageViewer */,
+				EAA5D07D6DBDC77F591F3DAFCD23425C /* Pods-ANZSingleImageViewer_Example */,
+				EF6491EB41FCCEE3E5592ED564A5789B /* Pods-ANZSingleImageViewer_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2BDEA02DEFD142ACF9F3CE8870B171F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B4B4D935F8A9134A00ACE8FE85184B /* ANZSingleImageViewer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF432C8022BD58079668D3ADC4A458E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A467A6A41C1C11A30D0CFDA848EAE321 /* bg_close@2x.png in Resources */,
+				1F26E9187A0F27C1C5B6D763C40252D1 /* bg_close@3x.png in Resources */,
+				7E141D5BED4A5A794C2BB21A44DAF3A8 /* icon_close@2x.png in Resources */,
+				C32BE4E3ACEEDA30A5C6C7635EB6AFDA /* icon_close@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A6EF8E3A41D5DFC7CF92E215E2D46B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE435D508975812FFE4A2A4EA18CAC0A /* Pods-ANZSingleImageViewer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EEF300A31BDA954D0A8446E1AEC5F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B4546C43D3BB1FD6D306B10431322C /* ANZSingleImageViewer+Transitioning.swift in Sources */,
+				70D96060C40CAA023AFC6AF1AABB9D9F /* ANZSingleImageViewer-dummy.m in Sources */,
+				9EF9EB301F92A8707F1BA9E51A9C9A54 /* ANZSingleImageViewer.swift in Sources */,
+				E468BD715D65AB105FBE065BB9CFEE36 /* ANZSingleImageViewerDestinationTransitionDelegate.swift in Sources */,
+				C52D2EADC572A8B2B68184140C8952F3 /* ANZSingleImageViewerSourceTransitionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646B3ABD15FDFCA35A4833EDC70E3E33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98AE8C549D963144CAE07CEA57861B04 /* Pods-ANZSingleImageViewer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70CAEBDE08F6D3B793AD3953B1C8E914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		680E66FC56C05273437D61D5533F8A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ANZSingleImageViewer-ANZSingleImageViewer";
+			target = 90757C5776807AAE8C47C2D530FA903E /* ANZSingleImageViewer-ANZSingleImageViewer */;
+			targetProxy = 6D3AFE497AF8D98B9E5105CAF29A7E92 /* PBXContainerItemProxy */;
+		};
+		811F37BD972BBF4C605811D3044FFBD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ANZSingleImageViewer_Example";
+			target = EAA5D07D6DBDC77F591F3DAFCD23425C /* Pods-ANZSingleImageViewer_Example */;
+			targetProxy = 1445BA257F4002563D02D6326EE7144F /* PBXContainerItemProxy */;
+		};
+		EBD53537AF16DF4F7BB1829CA1C2006A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ANZSingleImageViewer;
+			target = DE29AEDC63D1E571B1D30C992C894941 /* ANZSingleImageViewer */;
+			targetProxy = E24DC14BE17E579B5FC00C5A56A39FB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0498169D298730BB373E1B21A4AC182D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE756E3841B22D4545E629BF4B4FCB54 /* ANZSingleImageViewer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ANZSingleImageViewer";
+				INFOPLIST_FILE = "Target Support Files/ANZSingleImageViewer/ResourceBundle-ANZSingleImageViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ANZSingleImageViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		31D4F00510BB37E044CBCF79C41BF6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BECE9AABD3ABA433EE2962380368C44 /* Pods-ANZSingleImageViewer_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Example/Pods-ANZSingleImageViewer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50AF9574D90D56078A0C66840E711AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE756E3841B22D4545E629BF4B4FCB54 /* ANZSingleImageViewer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ANZSingleImageViewer/ANZSingleImageViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ANZSingleImageViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ANZSingleImageViewer/ANZSingleImageViewer.modulemap";
+				PRODUCT_MODULE_NAME = ANZSingleImageViewer;
+				PRODUCT_NAME = ANZSingleImageViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D347123267CEDDE0C90E871F69D52FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE756E3841B22D4545E629BF4B4FCB54 /* ANZSingleImageViewer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ANZSingleImageViewer/ANZSingleImageViewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ANZSingleImageViewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ANZSingleImageViewer/ANZSingleImageViewer.modulemap";
+				PRODUCT_MODULE_NAME = ANZSingleImageViewer;
+				PRODUCT_NAME = ANZSingleImageViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63F4AC9A7E0499C35ED669B8B888D7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE756E3841B22D4545E629BF4B4FCB54 /* ANZSingleImageViewer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ANZSingleImageViewer";
+				INFOPLIST_FILE = "Target Support Files/ANZSingleImageViewer/ResourceBundle-ANZSingleImageViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ANZSingleImageViewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		990AA70040390372146853990207CD37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C867038196F01B0F476D3FB92615454 /* Pods-ANZSingleImageViewer_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Example/Pods-ANZSingleImageViewer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED37DE3451C9597772A3F6C2336B0888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC620519FD42967D17A5D5BCD7096D0 /* Pods-ANZSingleImageViewer_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Tests/Pods-ANZSingleImageViewer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE3D544F4F2F3350D84FBBC374140266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1033EE1301AC2969626AD95A2D6D16CC /* Pods-ANZSingleImageViewer_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ANZSingleImageViewer_Tests/Pods-ANZSingleImageViewer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A5BC3BAF39247407BEE59719CF39763 /* Build configuration list for PBXNativeTarget "ANZSingleImageViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D347123267CEDDE0C90E871F69D52FD /* Debug */,
+				50AF9574D90D56078A0C66840E711AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABC146943B52AFF7FBC3194EEC0B03A3 /* Build configuration list for PBXNativeTarget "ANZSingleImageViewer-ANZSingleImageViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F4AC9A7E0499C35ED669B8B888D7D4 /* Debug */,
+				0498169D298730BB373E1B21A4AC182D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C017ABDC17260E1D328BA3DDA91EDA65 /* Build configuration list for PBXNativeTarget "Pods-ANZSingleImageViewer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED37DE3451C9597772A3F6C2336B0888 /* Debug */,
+				EE3D544F4F2F3350D84FBBC374140266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB6791CAB407FACC9C88094CE8815D29 /* Build configuration list for PBXNativeTarget "Pods-ANZSingleImageViewer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D4F00510BB37E044CBCF79C41BF6F0 /* Debug */,
+				990AA70040390372146853990207CD37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

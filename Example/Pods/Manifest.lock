@@ -1,0 +1,16 @@
+PODS:
+  - ANZSingleImageViewer (0.1.41)
+
+DEPENDENCIES:
+  - ANZSingleImageViewer (from `../`)
+
+EXTERNAL SOURCES:
+  ANZSingleImageViewer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ANZSingleImageViewer: f715567a329a4adf7b275be0b63769f390349d4e
+
+PODFILE CHECKSUM: 12a4b690baa5e91e5337e583511d3f3ac0fa38be
+
+COCOAPODS: 1.5.3
