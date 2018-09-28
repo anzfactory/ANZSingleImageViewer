@@ -31,18 +31,8 @@ extension ANZSingleImageViewer.AnimatedTransitioning {
             return
         }
         
-        let sourceViewController: UIViewController
-        if let navigationController = fromViewController as? UINavigationController, let vc = navigationController.children.last {
-            sourceViewController = vc
-        } else {
-            sourceViewController = fromViewController
-        }
-        let destinationViewController: UIViewController
-        if let navigationController = toViewController as? UINavigationController, let vc = navigationController.children.last {
-            destinationViewController = vc
-        } else {
-            destinationViewController = toViewController
-        }
+        let sourceViewController = topViewController(fromViewController)
+        let destinationViewController = topViewController(toViewController)
         
         guard
             let sourceData = sourceViewController as? ANZSingleImageViewerSourceTransitionDelegate,
@@ -102,18 +92,8 @@ extension ANZSingleImageViewer.AnimatedTransitioning {
             return
         }
         
-        let sourceViewController: UIViewController
-        if let navigationController = toViewController as? UINavigationController, let vc = navigationController.children.last {
-            sourceViewController = vc
-        } else {
-            sourceViewController = toViewController
-        }
-        let destinationViewController: UIViewController
-        if let navigationController = fromViewController as? UINavigationController, let vc = navigationController.children.last {
-            destinationViewController = vc
-        } else {
-            destinationViewController = fromViewController
-        }
+        let sourceViewController = topViewController(toViewController)
+        let destinationViewController = topViewController(fromViewController)
         
         guard
             let sourceData = sourceViewController as? ANZSingleImageViewerSourceTransitionDelegate,
@@ -172,6 +152,21 @@ extension ANZSingleImageViewer.AnimatedTransitioning {
             completed = !context.transitionWasCancelled
         }
         context.completeTransition(completed)
+    }
+}
+
+// MARK: - Util
+extension ANZSingleImageViewer.AnimatedTransitioning {
+    
+    private func topViewController(_ viewController: UIViewController) -> UIViewController {
+        
+        if let navigationController = viewController as? UINavigationController {
+            return topViewController(navigationController.children.last!)
+        } else if let tabbarController = viewController as? UITabBarController {
+            return topViewController(tabbarController.selectedViewController!)
+        } else {
+            return viewController
+        }
     }
 }
 
