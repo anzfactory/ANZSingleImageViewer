@@ -64,6 +64,10 @@ public final class ANZSingleImageViewer: UIViewController {
         return view
     }()
     
+    public override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
@@ -178,6 +182,8 @@ extension ANZSingleImageViewer {
             modalTransitionStyle = .crossDissolve
             modalPresentationStyle = .overFullScreen
         }
+        
+        modalPresentationCapturesStatusBarAppearance = true
         
         view.backgroundColor = type(of: self).backgroundColor
         view.addSubview(scrollView)
