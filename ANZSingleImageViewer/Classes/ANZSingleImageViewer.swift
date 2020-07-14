@@ -102,6 +102,7 @@ extension ANZSingleImageViewer {
             viewer.animator = animator
         }
         
+        vc.modalPresentationStyle = .fullScreen
         vc.present(viewer, animated: true, completion: nil)
         
         return viewer
