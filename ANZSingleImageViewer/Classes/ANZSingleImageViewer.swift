@@ -96,6 +96,7 @@ extension ANZSingleImageViewer {
         
         let viewer = ANZSingleImageViewer()
         viewer.image = image
+        viewer.modalPresentationStyle = .fullScreen
         
         if vc is ANZSingleImageViewerSourceTransitionDelegate {
             let animator = AnimatedTransitioning()
